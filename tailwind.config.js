@@ -17,6 +17,8 @@ module.exports = {
         hero: "url('./assets/images/webp/hero-bg.webp')",
         aboutUs: "url('./assets/images/webp/about-us-bg.webp')",
         roadmap : "url('./assets/images/webp/roadmap-bg-image.webp')",
+        faqs : "url('./assets/images/webp/faq-bg-image.webp')",
+        team : "url('./assets/images/webp/team-bg-image.webp')",
       },
       screens: {
         lg: "1025px",

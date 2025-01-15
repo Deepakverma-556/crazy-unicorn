@@ -5,6 +5,7 @@ import { ROADMAP_LIST } from '../utils/helper'
 import Description from '../common/Description'
 import RoadmapSmImage from '../assets/images/webp/roadmap-sm-image.webp'
 import UnicornImage from '../assets/images/webp/roadmap-unicorn-image.webp'
+import Heading from '../common/Heading'
 // import { scrollInfo } from 'motion/react'
 
 const Roadmap = () => {
@@ -15,7 +16,7 @@ const Roadmap = () => {
   return (
     <>
     <div className='bg-roadmap py-12 bg-no-repeat bg-cover'>
-{/*  */}
+    <Heading text="Roadmap" myClass={'pb-[177px] max-lg:pb-24 max-sm:pb-12'} />
     <div className='max-w-[1322px] max-lg:gap-5 max-[1200px]:max-w-[1000px] max-[1440px]:max-w-[1140px] w-full justify-center items-center flex flex-col relative max-xl:px-5 mx-auto'>
         <img className='roadmap-image max-lg:hidden max-[1440px]:max-w-[650px] max-[1200px]:max-w-[450px]' src={RoadMapImage} alt="roadmap-image" />
         <img className='lg:hidden h-[90%] left-[8%] max-md:left-[10%] max-sm:hidden absolute' src={RoadmapSmImage} alt="roadmapIMage" />

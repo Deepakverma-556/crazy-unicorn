@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../assets/images/png/venveo-logo.png'
-import { NAV_LIST } from '../utils/helper'
-import { SearchIcon } from '../utils/icons'
-import CustomButton from './CustomButton'
+import logo from "../assets/images/png/logo.png"
+import { HEADER_LIST, HEADER_SOCIAL_LINK_LIST } from '../utils/helper'
+import { LinkUnderline } from '../utils/icons'
 
-const Header = ({ myClass }) => {
+const Header = () => {
   const [open, setOpen] = useState()
   useEffect(() => {
     const handleOverflow = () => {
@@ -21,61 +20,57 @@ const Header = ({ myClass }) => {
     };
   }, [open]);
 
-  const handleSelectChange = (e) => {
-    setOpen(false);
-  }
   return (
-    <div className='max-w-[1358px] mx-auto pt-[30px] max-lg:pt-2 max-sm:pt-4 max-md:flex max-md:items-center max-md:justify-between'>
-      <div className=' max-w-max'>
-        <a href="#logo" className='relative z-10'>
-          <img src={logo} alt="venveo-logo" className='h-[90px] max-lg:h-20 max-md:h-14 max-sm:h-16 pointer-events-none' />
-        </a>
-      </div>
-      <div className={`flex items-center ${myClass} max-md:hidden`}>
-        <div className='bg-white relative z-10 py-7 max-lg:py-4 flex item-center gap-[42px] max-lg:gap-5 max-lg:px-6 pl-[41.79px] pr-[29.5px]'>
-          {NAV_LIST.map((obj, i) => (
-            <select key={i} name="venveo" id="myLink" className='cursor-pointer appearance-none bg-no-repeat pr-4 text-[15px] leading-[15px] font-maisonMedium outline-none'>
-              <option value={obj.title}>{obj.title}</option>
-              <option value={obj.optionOne}>{obj.optionOne}</option>
-              <option value={obj.optionTwo}>{obj.optionTwo}</option>
-              <option value={obj.optionThree}>{obj.optionThree}</option>
-            </select>
+    <>
+      <div className='flex items-center w-full justify-between max-w-[1360px] px-4 mx-auto pt-[6px]'>
+        <a href="#logo"><img src={logo} alt="logo" className='h-[88px] max-lg:h-16 pointer-events-none' /></a>
+        <ul className='flex items-center gap-[30px] max-md:hidden max-lg:gap-5'>
+          {HEADER_LIST.map((obj, i) => (
+            <li key={i}><a href={obj.link} className='font-pinky text-[22px] max-lg:text-xl leading-[25.31px] relative group'>{obj.title}<LinkUnderline myClass="absolute -bottom-4 max-lg:-bottom-3 w-0 group-hover:w-full transition-all duration-300" /></a></li>
           ))}
-          <div>
-            <a href="#search" className='search-icon group'>
-              <SearchIcon myclass='group-hover:fill-darkGreen transition-all duration-300' stroke='group-hover:stroke-darkGreen transition-all duration-300' />
-            </a>
-          </div>
+        </ul>
+        <ul className='flex items-center gap-[19.46px] max-lg:gap-3 max-md:hidden'>
+          {HEADER_SOCIAL_LINK_LIST.map((obj, i) => (
+            <li key={i}><a target='blank' href={obj.link} className='flex items-center justify-center size-[42px] max-lg:size-9 rounded-full border border-black hover:shadow-[0px_0px_22px_4px] hover:shadow-purple transition-all duration-300'>{obj.icon}</a></li>
+          ))}
+        </ul>
+        <div
+          className={`md:hidden z-30 cursor-pointer`}
+          onClick={() => setOpen(!open)}
+        >
+          <button
+            className="overflow-hidden relative z-50 lg:hidden size-6 flex flex-col justify-between items-center"
+          >
+            <span
+              className={`bg-black rounded-md w-6 h-0.5 block transition-all duration-300 ${open ? "translate-x-10" : ""
+                }`}
+            ></span>
+            <span
+              className={`bg-black rounded-md after:rounded-lg w-6 h-0.5 block relative after:bg-black after:absolute after:top-0 after:left-0 after:w-full after:h-0.5 after:transition-all after:duration-300 transition-all duration-300 ${open ? "rotate-45 after:rotate-90" : ""
+                }`}
+            ></span>
+            <span
+              className={`bg-black rounded-md w-6 h-0.5 block transition-all duration-300 ${open ? "-translate-x-10" : ""
+                }`}
+            ></span>
+          </button>
         </div>
-        <CustomButton text="Let's Talk" myClass="max-lg:py-[20.5px] py-[32.5px] px-[31.63px]" />
       </div>
-      <div
-        className={`md:hidden z-30 cursor-pointer`}
-        onClick={() => setOpen(!open)}
-      >
-        <div className={`flex flex-col gap-3 items-center cursor-pointer ${open ? "!gap-0 transition-all duration-300" : "transition-all duration-300"}`}>
-          <div className={`h-[2px] bg-white w-8 transition-all duration-300 rounded-lg ${open ? "rotate-[50deg] origin-center" : ""} `}></div>
-          <div className={`h-[2px] bg-white w-8 transition-all duration-300 rounded-lg ${open ? "-rotate-[53deg] origin-center" : ""} `}></div>
-        </div>
-      </div>
-      <div className={`w-full h-full bg-darkGreen transition-all duration-500 left-0 md:-top-full z-20 fixed flex flex-col bg-blue justify-center items-center ${open ? "top-0 left-0" : "-top-full"
+      <div className={`w-full h-full bg-gradient-to-bl from-purple to-darkPurple transition-all duration-500 left-0 md:-top-full z-20 fixed flex flex-col justify-center items-center ${open ? "top-0 left-0" : "-top-full"
         }`}>
-        <div className=' relative z-10 flex flex-col item-center justify-center text-center gap-7'>
-          {NAV_LIST.map((obj, i) => (
-            <select onChange={handleSelectChange} key={i} name="venveo" id="myLink" className='custom-select appearance-none pr-4 bg-no-repeat cursor-pointer text-[15px] text-white leading-[15px] font-maisonMedium outline-none max-md:mx-auto bg-transparent'>
-              <option value={obj.title}>{obj.title}</option>
-              <option value={obj.optionOne}>{obj.optionOne}</option>
-              <option value={obj.optionTwo}>{obj.optionTwo}</option>
-              <option value={obj.optionThree}>{obj.optionThree}</option>
-            </select>
+        <ul className='flex flex-col items-center gap-6'>
+          {HEADER_LIST.map((obj, i) => (
+            <li key={i}><a onClick={() => setOpen(false)} href={obj.link} className='text-base leading-5 text-white'>{obj.title}</a></li>
           ))}
-          <a onClick={() => setOpen(false)} href="#search" className='search-icon group max-md:mx-auto'>
-            <SearchIcon myclass='group-hover:fill-black transition-all duration-300' stroke='group-hover:stroke-black transition-all duration-300' />
-          </a>
-          <CustomButton customOnClick={() => setOpen(false)} text="Let's Talk" myClass="max-lg:py-[20.5px] py-[32.5px] px-[31.63px]" />
-        </div>
+        </ul>
+        <ul className='flex items-center gap-[19.46px] pt-6'>
+          {HEADER_SOCIAL_LINK_LIST.map((obj, i) => (
+            <li key={i}><a onClick={() => setOpen(false)} target='blank' href={obj.link} className='flex items-center justify-center h-[42px] w-[42px] max-lg:h-9 max-lg:w-9 rounded-full border border-white bg-white'>{obj.icon}</a></li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </>
+
   )
 }
 
