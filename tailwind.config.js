@@ -12,7 +12,10 @@ module.exports = {
         gray: "#4d4d4d",
         purple: "#b62aff",
         darkPurple:"#ff0df2"
-      }
+      },
+      backgroundImage: {
+        'roadmap' : "url('./assets/images/webp/roadmap-bg-image.webp')",
+      },
     },
   },
   plugins: [],
