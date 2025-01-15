@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       fontFamily: {
         pinky : ["Pinky Unicorn","sans-serif"]
+      },
+      colors: {
+        gray: "#4d4d4d",
+        purple: "#b62aff",
+        darkPurple:"#ff0df2"
       }
     },
   },
