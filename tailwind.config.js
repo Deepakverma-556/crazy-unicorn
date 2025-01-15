@@ -6,16 +6,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pinky : ["Pinky Unicorn","sans-serif"]
+        pinky: ["Pinky Unicorn", "sans-serif"]
       },
       colors: {
         gray: "#4d4d4d",
         purple: "#b62aff",
-        darkPurple:"#ff0df2"
+        darkPurple: "#ff0df2"
       },
       backgroundImage: {
-        hero:"url('./assets/images/webp/hero-bg.webp')",
-        aboutUs:"url('./assets/images/webp/about-us-bg.webp')",
+        hero: "url('./assets/images/webp/hero-bg.webp')",
+        aboutUs: "url('./assets/images/webp/about-us-bg.webp')",
+      },
+      screens: {
+        lg: "1025px",
+        md: "770px"
       }
     },
   },
