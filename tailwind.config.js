@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pinky : ["Pinky Unicorn","sans-serif"]
+        pinky: ["Pinky Unicorn", "sans-serif"]
       },
       colors: {
         gray: "#4d4d4d",
@@ -14,8 +14,14 @@ module.exports = {
         darkPurple:"#ff0df2"
       },
       backgroundImage: {
-        'roadmap' : "url('./assets/images/webp/roadmap-bg-image.webp')",
+        hero: "url('./assets/images/webp/hero-bg.webp')",
+        aboutUs: "url('./assets/images/webp/about-us-bg.webp')",
+        roadmap : "url('./assets/images/webp/roadmap-bg-image.webp')",
       },
+      screens: {
+        lg: "1025px",
+        md: "770px"
+      }
     },
   },
   plugins: [],
