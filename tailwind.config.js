@@ -12,6 +12,10 @@ module.exports = {
         gray: "#4d4d4d",
         purple: "#b62aff",
         darkPurple:"#ff0df2"
+      },
+      backgroundImage: {
+        hero:"url('./assets/images/webp/hero-bg.webp')",
+        aboutUs:"url('./assets/images/webp/about-us-bg.webp')",
       }
     },
   },
