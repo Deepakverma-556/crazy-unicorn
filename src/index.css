@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
+input::placeholder{
+  color: black;
+}
+
 @font-face {
   font-family: "Pinky Unicorn";
   src: url("./assets/fonts/Pinky\ Unicorn.ttf") format("truetype");
