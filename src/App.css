@@ -1,3 +1,10 @@
-.asd{
-    background-image: linear-gradient(100.7deg, rgba(182, 42, 255, 0.5) -82.68%, rgba(255, 13, 242, 0.5) 143.2%);
+.swiper-wrapper{
+    padding-top: 190px;
+}
+
+@media (max-width: 1279.98px) {
+    .swiper-wrapper{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }

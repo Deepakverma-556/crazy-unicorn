@@ -14,7 +14,7 @@ const AboutUs = () => {
       )
     }, [])
   return (
-    <div id='about' className='pt-[139px] max-md:pt-28 max-sm:pt-20 relative'>
+    <div id='about' className='pt-[139px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12 relative'>
       <img className='absolute -bottom-[30%] max-md:max-w-[250px] left-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={leftAnimation} alt="icons" />
       <div className='max-w-[1352px] relative mx-auto px-4'>
         <div className='flex items-center max-lg:flex-wrap max-lg:flex-col-reverse justify-between -mx-3'>

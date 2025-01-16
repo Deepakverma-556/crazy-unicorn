@@ -25,7 +25,7 @@ const Faq = () => {
   }, [])
 
   return (
-    <div id='faq' className='relative pb-[128px]  ma-xl:py-[100px] max-lg:py-20 max-md:py-16 max-sm:py-12 pt-[25.77px]'>
+    <div id='faq' className='relative pt-[207px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12'>
       <img className='absolute bottom-40 max-md:max-w-[250px] right-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <img className='absolute top-[-40%] max-md:max-w-[250px] left-0 animation-icon-2 pointer-events-auto' src={AnimationIcon} alt="icons" />
         <div className='max-w-[1189px] relative z-10 flex gap-[35px] max-md:gap-[25px] max-sm:gap-[15px] flex-col max-xl:px-5 mx-auto'>

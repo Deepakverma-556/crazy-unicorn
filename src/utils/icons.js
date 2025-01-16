@@ -24,8 +24,8 @@ export const Discord = () => (
 
 export const FaqArrow = () => (
     <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.42857 0.285716L12 8.85714L20.5714 0.285714L24 2L12 14L-1.04907e-06 2L3.42857 0.285716Z" fill="black"/>
-</svg>
+        <path d="M3.42857 0.285716L12 8.85714L20.5714 0.285714L24 2L12 14L-1.04907e-06 2L3.42857 0.285716Z" fill="black" />
+    </svg>
 )
 
 export const Email = () => (
@@ -40,20 +40,20 @@ export const Email = () => (
         <path d="M12.6384 9.16554L10.793 10.5467C10.6835 10.6282 10.5596 10.6682 10.4344 10.6682C10.3092 10.6682 10.1853 10.6282 10.0758 10.5467L8.23039 9.16406L0.0429688 15.0488C0.143388 15.7527 0.657221 16.2996 1.30538 16.2996H19.5634C20.2116 16.2996 20.7254 15.7527 20.8258 15.0488L12.6384 9.16554Z" fill="url(#paint3_linear_25_6617)" />
         <defs>
             <linearGradient id="paint0_linear_25_6617" x1="7.74935" y1="-3.44376" x2="26.334" y2="-1.04908" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B62AFF" />
-                <stop offset="1" stop-color="#FF0DF2" />
+                <stop stopColor="#B62AFF" />
+                <stop offset="1" stopColor="#FF0DF2" />
             </linearGradient>
             <linearGradient id="paint1_linear_25_6617" x1="-6.08463" y1="-3.44376" x2="12.5" y2="-1.04908" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B62AFF" />
-                <stop offset="1" stop-color="#FF0DF2" />
+                <stop stopColor="#B62AFF" />
+                <stop offset="1" stopColor="#FF0DF2" />
             </linearGradient>
             <linearGradient id="paint2_linear_25_6617" x1="-17.9399" y1="-5.65172" x2="29.023" y2="14.7569" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B62AFF" />
-                <stop offset="1" stop-color="#FF0DF2" />
+                <stop stopColor="#B62AFF" />
+                <stop offset="1" stopColor="#FF0DF2" />
             </linearGradient>
             <linearGradient id="paint3_linear_25_6617" x1="-17.9334" y1="4.70437" x2="24.8998" y2="28.2877" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#B62AFF" />
-                <stop offset="1" stop-color="#FF0DF2" />
+                <stop stopColor="#B62AFF" />
+                <stop offset="1" stopColor="#FF0DF2" />
             </linearGradient>
         </defs>
     </svg>

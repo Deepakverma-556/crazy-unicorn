@@ -18,14 +18,13 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className='pb-12 relative'>
+    <div className='relative'>
       <img className='absolute top-[20%] max-md:max-w-[250px] left-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={leftAnimation} alt="icons" />
       <img className='absolute top-[20%] max-md:max-w-[250px] right-0 animation-icon-2 h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <Header />
       <div className='max-w-[1296px] mx-auto px-4 pt-[165px] max-lg:pt-20 max-sm:pt-8'>
         <img id='home' src={hero} alt="hero" className='mx-auto relative' />
       </div>
-      <img src="" alt="" />
     </div>
   )
 }
