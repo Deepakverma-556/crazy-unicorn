@@ -50,7 +50,7 @@ const Team = () => {
             <SwiperSlide key={index}>
               <div className='max-w-[424px] group max-md:mx-auto hover:scale-y-110 cursor-pointer origin-bottom transition-all duration-300 p-[1px] bg-teamCard w-full rounded-[25px]' >
                   <div className='bg-white justify-center items-center flex flex-col pb-5 rounded-[25px]'>
-                    <img className='max-w-[312px] max-md:max-w-[250px] w-full -mt-9 max-md:mt-[unset] max-md:group-hover:scale-y-[0.99] group-hover:scale-[1.20] origin-bottom transition-all duration-300' src={obj.image} alt="images" />
+                    <img className='max-w-[312px] pointer-events-none max-md:max-w-[250px] w-full -mt-9 max-md:mt-[unset] max-md:group-hover:scale-y-[0.99] group-hover:scale-[1.20] origin-bottom transition-all duration-300' src={obj.image} alt="images" />
                     <h3 className='text-[40px] pt-[28.84px] max-lg:text-4xl group-hover:scale-y-[0.99] max-md:text-3xl max-sm:text-2xl font-pinky text-center text-black'>{obj.title}</h3>
                     <Description text={obj.position}/>
                   </div>

@@ -17,7 +17,7 @@ const Roadmap = () => {
     <div id='roadmap' className='bg-roadmap pt-[157px] ma-xl:py-[100px] max-lg:py-20 max-md:py-16 max-sm:py-12 bg-no-repeat bg-cover'>
     <Heading text="Roadmap" myClass={'pb-[177px] max-lg:pb-16 max-sm:pb-8'} />
     <div className='max-w-[1322px] max-lg:gap-5 max-[1200px]:max-w-[1000px] max-[1440px]:max-w-[1140px] w-full justify-center items-center flex flex-col relative max-xl:px-5 mx-auto'>
-        <img className='roadmap-image max-lg:hidden max-[1440px]:max-w-[650px] max-[1200px]:max-w-[450px]' src={RoadMapImage} alt="roadmap-image" />
+        <img className='roadmap-image max-lg:hidden pointer-events-none max-[1440px]:max-w-[650px] max-[1200px]:max-w-[450px]' src={RoadMapImage} alt="roadmap-image" />
         <img className='lg:hidden h-[90%] left-[8%] max-md:left-[10%] max-sm:hidden absolute' src={RoadmapSmImage} alt="roadmapIMage" />
         <div className='absolute top-[-3%] h-full left-[0%] max-sm:hidden'>
         <img className='lg:hidden sticky top-[3%] left-[5%]' src={UnicornImage} alt="UnicornImage" />
