@@ -7,6 +7,9 @@
 html,
 body {
   font-family: "Comic Neue", "sans-serif";
+  background-image: url("./assets/images/webp/body-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   scroll-behavior: smooth;
 }
 

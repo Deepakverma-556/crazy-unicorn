@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <div className='flex items-center w-full justify-between max-w-[1360px] px-4 mx-auto pt-[6px]'>
-        <a href="#logo"><img src={logo} alt="logo" className='h-[88px] max-lg:h-16 pointer-events-none' /></a>
+        <a href="#logo" className='relative'><img src={logo} alt="logo" className='h-[88px] max-lg:h-16 pointer-events-none' /></a>
         <ul className='flex items-center gap-[30px] max-md:hidden max-lg:gap-5'>
           {HEADER_LIST.map((obj, i) => (
             <li key={i}><a href={obj.link} className='font-pinky text-[22px] max-lg:text-xl leading-[25.31px] relative group'>{obj.title}<LinkUnderline myClass="absolute -bottom-4 max-lg:-bottom-3 w-0 group-hover:w-full transition-all duration-300" /></a></li>
@@ -46,7 +46,7 @@ const Header = () => {
                 }`}
             ></span>
             <span
-              className={`bg-black rounded-md after:rounded-lg w-6 h-0.5 block relative after:bg-black after:absolute after:top-0 after:left-0 after:w-full after:h-0.5 after:transition-all after:duration-300 transition-all duration-300 ${open ? "rotate-45 after:rotate-90" : ""
+              className={`bg-black rounded-md after:rounded-lg w-6 h-0.5 block relative after:bg-transparent after:absolute after:top-0 after:left-0 after:w-full after:h-0.5 after:transition-all after:duration-300 transition-all duration-300 ${open ? "rotate-45 after:rotate-90 after:!bg-black" : ""
                 }`}
             ></span>
             <span
