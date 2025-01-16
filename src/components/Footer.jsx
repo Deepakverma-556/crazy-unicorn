@@ -11,7 +11,7 @@ import rainbow from "../assets/images/webp/footer-rainbow.webp"
 import centerAnimation from '../assets/images/png/footer-center-animation.png'
 import bottomAnimation from '../assets/images/png/footer-bottom-animation.png'
 import gsap from 'gsap'
-import cloud from "../assets/images/webp/clouds.webp"
+import cloud from "../assets/images/png/footer-cloud 1.png"
 emailjs.init("w_qmvSmvlfC7ZIszP");
 
 const Footer = () => {

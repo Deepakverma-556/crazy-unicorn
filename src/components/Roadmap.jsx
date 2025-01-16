@@ -24,8 +24,8 @@ const Roadmap = () => {
       { y: 50 },
       { scale: 1, duration: 3, repeat: -1, yoyo: true, y: -50 }
     )
-    ScrollReveal().reveal('.card', { interval: 200 , reset: true , distance: '50px' });
-    ScrollReveal().reveal('.roadmap-image', { interval: 200 , reset: true , distance: '-50px' });
+    // ScrollReveal().reveal('.card', { interval: 200 , reset: true , distance: '50px' });
+    // ScrollReveal().reveal('.roadmap-image', { interval: 200 , reset: true , distance: '-50px' });
   })
   return (
     <div id='roadmap' className='pt-[231px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12 relative'>
