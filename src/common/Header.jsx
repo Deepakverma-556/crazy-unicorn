@@ -46,7 +46,7 @@ const Header = () => {
                 }`}
             ></span>
             <span
-              className={`bg-black rounded-md after:rounded-lg w-6 h-0.5 block relative after:bg-black after:absolute after:top-0 after:left-0 after:w-full after:h-0.5 after:transition-all after:duration-300 transition-all duration-300 ${open ? "rotate-45 after:rotate-90" : ""
+              className={`bg-black rounded-md after:rounded-lg w-6 h-0.5 block relative after:bg-transparent after:absolute after:top-0 after:left-0 after:w-full after:h-0.5 after:transition-all after:duration-300 transition-all duration-300 ${open ? "rotate-45 after:rotate-90 after:!bg-black" : ""
                 }`}
             ></span>
             <span
