@@ -3,6 +3,7 @@ import Header from '../common/Header'
 import hero from "../assets/images/webp/hero.webp"
 import leftAnimation from "../assets/images/png/hero-left-animation.png"
 import rightAnimation from "../assets/images/png/hero-right-animation.png"
+import cloud from "../assets/images/webp/clouds.webp"
 import gsap from 'gsap'
 
 const Hero = () => {
@@ -19,6 +20,7 @@ const Hero = () => {
 
   return (
     <div className='relative'>
+      <img src={cloud} alt="cloud" className='absolute bottom-0 z-10' />
       <img className='absolute top-[20%] max-md:max-w-[250px] left-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={leftAnimation} alt="icons" />
       <img className='absolute top-[20%] max-md:max-w-[250px] right-0 animation-icon-2 h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <Header />

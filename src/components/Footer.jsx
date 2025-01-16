@@ -11,9 +11,7 @@ import rainbow from "../assets/images/webp/footer-rainbow.webp"
 import centerAnimation from '../assets/images/png/footer-center-animation.png'
 import bottomAnimation from '../assets/images/png/footer-bottom-animation.png'
 import gsap from 'gsap'
-import firstCloud from "../assets/images/webp/footer-cloud.webp"
-import secondCloud from "../assets/images/webp/footer-second-cloud.webp"
-import thirdCloud from "../assets/images/webp/footer-third-cloud.webp"
+import cloud from "../assets/images/webp/clouds.webp"
 emailjs.init("w_qmvSmvlfC7ZIszP");
 
 const Footer = () => {
@@ -41,10 +39,11 @@ const Footer = () => {
     )
   }, [])
   return (
-    <div className='px-4 pb-16 max-md:pb-12 max-sm:pb-8 pt-[265px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12 relative'>
-      {/* <img src={firstCloud} alt="cloud" className='absolute bottom-28 right-0 z-10' />
-      <img src={secondCloud} alt="cloud" className='absolute bottom-7' />
-      <img src={thirdCloud} alt="cloud" className='absolute bottom-12 z-10' /> */}
+    <div className='px-4 pb-16 max-md:pb-12 max-sm:pb-8 pt-[265px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12 relative overflow-hidden'>
+      <div className='max-w-[1920px] mx-auto relative'> 
+
+      </div>
+      <img src={cloud} alt="cloud" className='bottom-0 z-10 absolute max-[1921px]:h-[40%] h-[90%] w-full' />
       <img className='absolute top-20 max-md:max-w-[250px] max-xl:h-64 left-0 animation-icon pointer-events-none z-20' src={centerAnimation} alt="icons" />
       <img className='absolute bottom-20 max-md:max-w-[250px] max-xl:h-64 left-0 animation-icon-2 pointer-events-none z-20' src={bottomAnimation} alt="icons" />
       <img src={rainbow} alt="rainbow" className='absolute h-[667px] max-xl:h-[500px] max-lg:h-[400px] max-md:h-72 max-sm:h-52 right-0 bottom-20' />
