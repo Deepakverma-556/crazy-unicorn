@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <div className='relative'>
-      <img src={cloud} alt="cloud" className='absolute bottom-0 z-10 w-full max-[1921px]:h-[30%] h-[50%]' />
+      <img src={cloud} alt="cloud" className='absolute bottom-0 z-10 w-full max-[1921px]:h-[30%] h-[50%] pointer-events-none' />
       <img className='absolute top-[20%] max-md:max-w-[250px] left-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={leftAnimation} alt="icons" />
       <img className='absolute top-[20%] max-md:max-w-[250px] right-0 animation-icon-2 h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <Header />
