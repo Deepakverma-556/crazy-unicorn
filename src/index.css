@@ -20,3 +20,21 @@ body {
 input::placeholder {
   color: black;
 }
+
+.swiper-wrapper {
+  padding-top: 190px;
+}
+
+@media (max-width: 1279.98px) {
+  .swiper-wrapper {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 770.98px) {
+  .swiper-wrapper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}

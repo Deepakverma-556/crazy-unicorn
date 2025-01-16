@@ -33,7 +33,7 @@ const Roadmap = () => {
       <img className='absolute top-0 max-md:max-w-[250px] right-0 animation-icon-2 h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <img className='absolute -bottom-40 max-md:max-w-[250px] right-0 animation-icon-3 h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
     <Heading text="Roadmap" myClass={'pb-[117px] max-lg:pb-16 max-md:pb-10 max-sm:pb-8'} />
-    <div className='max-w-[1322px] max-lg:gap-5 max-[1200px]:max-w-[1000px] max-[1440px]:max-w-[1140px] w-full justify-center items-center flex flex-col relative max-xl:px-5 mx-auto'>
+    <div className='max-w-[1322px] max-lg:gap-5 max-[1200px]:max-w-[1000px] max-[1440px]:max-w-[1140px] w-full justify-center items-center flex flex-col relative max-xl:px-4 mx-auto'>
         <img className='roadmap-image max-lg:hidden pointer-events-none max-[1440px]:max-w-[650px] max-[1200px]:max-w-[450px]' src={RoadMapImage} alt="roadmap-image" />
         <img className='lg:hidden h-[90%] left-[8%] max-md:left-[10%] max-sm:hidden absolute' src={RoadmapSmImage} alt="roadmapIMage" />
         <div className='absolute top-[-3%] h-full left-[0%] max-sm:hidden'>

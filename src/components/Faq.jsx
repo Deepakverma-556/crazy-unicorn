@@ -29,7 +29,7 @@ const Faq = () => {
     <div id='faq' className='relative pt-[207px] max-lg:pt-20 max-sm:pt-16'>
       <img className='absolute bottom-40 max-md:max-w-[250px] right-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <img className='absolute top-[-40%] max-md:max-w-[250px] left-0 animation-icon-2 pointer-events-auto' src={AnimationIcon} alt="icons" />
-        <div className='max-w-[1189px] relative z-10 flex gap-[35px] max-md:gap-[25px] max-sm:gap-[15px] flex-col max-xl:px-5 mx-auto'>
+        <div className='max-w-[1189px] relative z-10 flex gap-[35px] max-md:gap-[25px] max-sm:gap-[15px] flex-col max-xl:px-4 mx-auto'>
             <Heading text={'FAQs'} myClass={'pb-[88px] max-lg:pb-16 max-md:pb-6 max-sm:pb-2'}/>
             { FAQS_LIST.map((obj , index) => (
               <div className='w-full' key={index}>

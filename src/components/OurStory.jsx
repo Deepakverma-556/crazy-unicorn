@@ -4,6 +4,7 @@ import Description from '../common/Description'
 import AboutUs from './AboutUs'
 import leftAnimation from "../assets/images/png/our-story-left-animation.png"
 import rightAnimation from "../assets/images/png/our-story-right-animation.png"
+import cloud from "../assets/images/png/footer-cloud.png"
 import gsap from 'gsap'
 
 const OurStory = () => {
@@ -20,6 +21,7 @@ const OurStory = () => {
   }, [])
   return (
     <div className='relative pt-[6px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12'>
+      <img src={cloud} alt="cloud" className='absolute md:hidden rotate-180 top-0 h-[2%] w-full' />
       <img className='absolute top-0 max-md:max-w-[250px] left-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={leftAnimation} alt="icons" />
       <img className='absolute top-[20%] max-md:max-w-[250px] right-0 animation-icon-2 h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <div id='story' className='px-4 relative'>
