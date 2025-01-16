@@ -9,7 +9,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Team = () => {
   return (
-    <div id='team' className='pt-[137px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12'>
+    <div id='team' className='pt-[137px] max-lg:pt-20 max-sm:pt-16'>
       <Heading text={'Team'} />
       <div className='max-w-[1321px] flex max-2xl:px-5 relative z-10 mx-auto gap-[23.64px] max-xl:flex-wrap max-xl:justify-center max-xl:px-5'>
         <Swiper

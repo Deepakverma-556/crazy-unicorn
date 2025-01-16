@@ -42,6 +42,7 @@ export const HEADER_SOCIAL_LINK_LIST = [
         link:"https://discord.com/"
     },
 ]
+
 export const ROADMAP_LIST =[
     {
         heading : 'Phase 1' ,
@@ -65,6 +66,7 @@ export const ROADMAP_LIST =[
         description : 'Sed lectus ut elit id lectus diam massa nisl pretium. Sagittis, adipiscing maecenas lorem ullamcorper. Faucibus netus sed varius loborti orbi sit sit.',
     },
 ]
+
 export const FAQS_LIST = [
     {
         title : 'Q.1 Eu faucibus lorem nulla cras ?' ,
@@ -100,7 +102,6 @@ export const FAQS_LIST = [
         title : 'Q.7 gravida maecenas amet tincidunt feugiat ?' ,
         description : 'Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.'
     },
-    
 ]
 
 export const TEAM_LIST = [
@@ -109,17 +110,14 @@ export const TEAM_LIST = [
         title : 'Jerome Bell',
         position : '(CEO)'
     },
-    
     {
         image : Unicorn ,
         title : 'Jenny Wilson',
         position : '(Founder)'
     },
-    
     {
         image : Unicorn ,
         title : 'Ralph Edwards',
         position : '(Team Member)'
     },
-
 ]

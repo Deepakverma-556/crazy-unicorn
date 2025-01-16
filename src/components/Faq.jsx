@@ -18,6 +18,7 @@ const Faq = () => {
        { y: -50 },
        {scale: 1 , duration: 3 , repeat: -1 , yoyo: true , y: 50}
     )
+
     gsap.fromTo('.animation-icon-2',
       { y: 50 },
       { scale: 1, duration: 3, repeat: -1, yoyo: true, y: -50 }
@@ -25,15 +26,15 @@ const Faq = () => {
   }, [])
 
   return (
-    <div id='faq' className='relative pt-[207px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12'>
+    <div id='faq' className='relative pt-[207px] max-lg:pt-20 max-sm:pt-16'>
       <img className='absolute bottom-40 max-md:max-w-[250px] right-0 animation-icon h-[529px] max-md:h-[400px] max-sm:h-72 max-md:object-cover pointer-events-none' src={rightAnimation} alt="icons" />
       <img className='absolute top-[-40%] max-md:max-w-[250px] left-0 animation-icon-2 pointer-events-auto' src={AnimationIcon} alt="icons" />
         <div className='max-w-[1189px] relative z-10 flex gap-[35px] max-md:gap-[25px] max-sm:gap-[15px] flex-col max-xl:px-5 mx-auto'>
-            <Heading text={'FAQs'} myClass={'pb-[88px] max-lg:pb-16 max-sm:pb-2'}/>
+            <Heading text={'FAQs'} myClass={'pb-[88px] max-lg:pb-16 max-md:pb-6 max-sm:pb-2'}/>
             { FAQS_LIST.map((obj , index) => (
               <div className='w-full' key={index}>
                   <button onClick={() => handleClick(index)} className='flex w-full !text-left font-pinky text-[40px] max-lg:text-4xl max-md:text-3xl max-sm:text-2xl justify-between items-center'>{obj.title}<span className={`transition-all duration-300 ease-linear ${openIndex === index ? 'rotate-180' : ''}`}><FaqArrow/></span> </button>
-                  <Description text={obj.description} myClass={`!text-left max-w-[831px] overflow-hidden transition-all duration-300  border-solid border-black border-opacity-30 ${openIndex === index ? 'max-h-28 border-b pb-[22px] max-md:pb-[15px]' : 'max-h-0'}`}/>
+                  <Description text={obj.description} myClass={`!text-left max-w-[831px] overflow-hidden transition-all duration-300 border-solid border-black border-opacity-30 ${openIndex === index ? 'max-h-28 border-b pb-[22px] max-md:pb-[15px]' : 'max-h-0'}`}/>
               </div>
             ))
             }

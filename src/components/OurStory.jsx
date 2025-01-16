@@ -12,6 +12,7 @@ const OurStory = () => {
       { y: -30 },
       { scale: 1, duration: 3, repeat: -1, yoyo: true, y: 30 }
     )
+    
     gsap.fromTo('.animation-icon-2',
       { y: 50 },
       { scale: 1, duration: 3, repeat: -1, yoyo: true, y: -50 }

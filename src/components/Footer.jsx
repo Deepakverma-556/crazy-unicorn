@@ -11,7 +11,7 @@ import rainbow from "../assets/images/webp/footer-rainbow.webp"
 import centerAnimation from '../assets/images/png/footer-center-animation.png'
 import bottomAnimation from '../assets/images/png/footer-bottom-animation.png'
 import gsap from 'gsap'
-import cloud from "../assets/images/png/footer-cloud 1.png"
+import cloud from "../assets/images/png/footer-cloud.png"
 emailjs.init("w_qmvSmvlfC7ZIszP");
 
 const Footer = () => {
@@ -20,6 +20,7 @@ const Footer = () => {
   const [formValue, setFormValue] = useState({
     email: ""
   })
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formValue)
@@ -28,18 +29,20 @@ const Footer = () => {
       email: ""
     })
   }
+
   useEffect(() => {
     gsap.fromTo('.animation-icon',
       { y: -50 },
       { scale: 1, duration: 3, repeat: -1, yoyo: true, y: 20 }
     )
+
     gsap.fromTo('.animation-icon-2',
       { y: 50 },
       { scale: 1, duration: 3, repeat: -1, yoyo: true, y: -20 }
     )
   }, [])
   return (
-    <div className='px-4 pb-16 max-md:pb-12 max-sm:pb-8 pt-[265px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12 relative overflow-hidden'>
+    <div className='px-4 pb-16 max-sm:pb-8 pt-[265px] max-lg:pt-20 max-md:pt-16 max-sm:pt-12 relative overflow-hidden'>
       <div className='max-w-[1920px] mx-auto relative'> 
 
       </div>
@@ -56,7 +59,7 @@ const Footer = () => {
             <Email />
           </label>
           <input required value={formValue.email} onChange={(e) => setFormValue({ ...formValue, email: e.target.value })} id='email' type="email" placeholder='Your email' className='px-[9px] text-black text-base leading-6 h-full w-[60%] pt-[15px] pb-[18px] max-sm:pb-5 outline-none' />
-          <CustomButton text="subscribe" buttonClass="!py-[9.5px] !px-[28.6px] !text-[25px] !leading-[28.76px] max-sm:!px-3 max-sm:!py-1" myClass="!h-[49px] max-sm:!h-9 max-sm:!w-[137px] !w-[156px] !ml-auto" />
+          <CustomButton text="subscribe" buttonClass="!py-[9.5px] !px-[28.6px] !text-[25px] !leading-[28.76px] max-sm:!px-3 max-sm:!py-1" myClass="!h-[49px] max-sm:!h-9 max-sm:!w-[123px] max-[420px]:!w-[137px] !w-[156px] !ml-auto" />
         </form>
       </div>
       <a href="#logo" className='flex relative z-20 max-w-max mx-auto mt-[287px] max-lg:mt-40 mb-[60px] max-lg:mb-10 max-sm:mt-20 max-sm:mb-6'><img src={logo} alt="logo" className='h-[180px] max-md:h-40 max-sm:h-32 mx-auto pointer-events-none' /></a>

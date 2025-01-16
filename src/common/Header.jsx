@@ -35,11 +35,11 @@ const Header = () => {
           ))}
         </ul>
         <div
-          className={`md:hidden z-30 cursor-pointer`}
+          className={`md:hidden z-50 cursor-pointer`}
           onClick={() => setOpen(!open)}
         >
           <button
-            className="overflow-hidden relative z-50 lg:hidden size-6 flex flex-col justify-between items-center"
+            className="overflow-hidden relative z-50 md:hidden size-6 flex flex-col justify-between items-center"
           >
             <span
               className={`bg-black rounded-md w-6 h-0.5 block transition-all duration-300 ${open ? "translate-x-10" : ""
@@ -56,7 +56,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className={`w-full h-full bg-gradient-to-bl from-purple to-darkPurple transition-all duration-500 left-0 md:-top-full z-20 fixed flex flex-col justify-center items-center ${open ? "top-0 left-0" : "-top-full"
+      <div className={`w-full h-full bg-gradient-to-bl from-purple to-darkPurple transition-all duration-500 left-0 md:-top-full z-40 fixed flex flex-col justify-center items-center ${open ? "top-0 left-0" : "-top-full"
         }`}>
         <ul className='flex flex-col items-center gap-6'>
           {HEADER_LIST.map((obj, i) => (
