@@ -19,7 +19,7 @@ const AboutUs = () => {
       <div className='max-w-[1352px] relative mx-auto px-4'>
         <div className='flex items-center max-lg:flex-wrap max-lg:flex-col-reverse justify-between -mx-3'>
           <div className='w-7/12 px-3 max-lg:w-full max-lg:pt-8 max-sm:pt-5'>
-            <img src={unicorn} alt="about-us-unicorn" className='h-[694px] max-xl:h-[650px] max-md:h-[500px] max-sm:h-[400px] max-lg:mx-auto xl:max-w-[661px] xl:w-full pointer-events-none' />
+            <img src={unicorn} alt="about-us-unicorn" className='h-[766px] max-xl:h-[650px] max-md:h-[500px] max-sm:h-[400px] max-lg:mx-auto xl:max-w-[661px] xl:w-full pointer-events-none' />
           </div>
           <div className='w-5/12 px-3 max-lg:w-full'>
             <Heading myClass="lg:!mx-[unset]" text="about us" />
